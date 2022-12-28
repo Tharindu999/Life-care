@@ -1,10 +1,3 @@
-/*
-    POST /login -> authentificate in the system
-    GET /       -> get to the login page
-
-    The functions passport.use, passport.serializeUser, passport.deserializeUser are taken from the
-    official documentation http://www.passportjs.org/docs and adapted to the User model of this system
-*/
 
 const express = require('express');
 const router = express.Router();
@@ -30,7 +23,12 @@ router.post('/login',
     }), function(req, res) {
         // If this function gets called, authentication was successful.
         // `req.user` contains the authenticated user.
+      
         res.redirect('/app');
+      
+      
+        
+       
     }
 );
 

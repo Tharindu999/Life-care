@@ -1,8 +1,3 @@
-/*
-    GET /app/getdiseases -> return JSON with all diseases in the system
-    POST /app/adddisease -> add a new disease in the system
-    POST /app/deletedisease -> delete a disease from the system
-*/
 
 const express = require('express');
 const _ = require('lodash');

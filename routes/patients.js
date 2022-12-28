@@ -1,12 +1,4 @@
-/*
-     GET /app/addpatient -> go to addPatient page
-     POST /app/addpatient                -> add a patient in the database
-     GET  /app/getpatients               -> get a JSON with all patients
-     GET  /app/patient/:hospitalNumber   -> get one patiente data
-     GET  /app/getpatient/:hospitalNumber-> get JSON of a patiente data
-     POST /app/updatepatient/:hospitalNumber -> update disease & score for patient
-     POST /app/delete/:hospitalNumber -> detele a patient from the system
-*/
+
 
 const express = require('express');
 const _ = require('lodash');

@@ -7,7 +7,7 @@
 body, html {
     height: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgb(182, 205, 212), rgb(120, 162, 235));
+    background-image: linear-gradient(rgb(245, 255, 255), rgb(245, 255, 255));
     /*background: url(https://i.ytimg.com/vi/uwt2FLoYWe0/maxresdefault.jpg) no-repeat center center fixed;*/
 }
 
