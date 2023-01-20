@@ -3,7 +3,7 @@
 const express = require('express');
 const router = express.Router();
 
-var {scoreOfDisease, Disease} = require('./../server/models/diseases.js');
+var {scoreOfDisease, Disease} = require('./../server/models/doctor.js');
 var {Patient} = require('./../server/models/patient.js');
 var {rooms, Room} = require('./../server/models/rooms');
 

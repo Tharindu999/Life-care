@@ -56,13 +56,13 @@ $(document).ready(function() {
 		  $('#patients-waiting').dataTable({
 		       data: patientsWaitingTableConstructor,
 		       columns: [{
-		       	 title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  no.",
+		       	 title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  NIC",
                      width: "30%"
 		       }, {
 		           title: "Pending patients",
                      width: "60%"
 		       }, {
-		           title: "Score",
+		           title: "Ward",
                      width: "10%"
 		       }],
 		       scrollY: '60vh',
@@ -94,16 +94,16 @@ $(document).ready(function() {
 		  $('#patients-in-hospital').DataTable({
    			   data: patientsInHospitalTableConstructor,
 		        columns:[{
-	                title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  no.",
+	                title: "<span class=\"fa fa-hospital-o fa-fw\" style=\"color: black;\"></span>   " + "  NIC",
                      width: "25%"
 	            },{
-	                title: "Patient in a room",
+	                title: "Patient Name",
                      width: "45%"
 	            },{
-	           	 title: "Room",
+	           	 title: "Room Name",
                      width: "15%"
 	            },{
-	           	 title: "Score",
+	           	 title: "Ward",
                      width: "15%"
 	            }],
 		        scrollY: '60vh',

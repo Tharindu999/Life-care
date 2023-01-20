@@ -18,10 +18,10 @@ $(document).ready(function() {
            $('#diseases-table').dataTable({
 		      data: diseasesScoresCheckboxes,
 		      columns:[{
-	              title: "Disease",
+	              title: "Doctor",
                   width: "50%"
 	          },{
-	              title: "Score",
+	              title: "Ward",
                   width: "20%"
 	          },{
 	              title: "Select",
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		      paging: false,
                 info: false,
                 language: {
-                  searchPlaceholder: "Search disease...",
+                  searchPlaceholder: "Search Doctor...",
                   sSearch: ""
                 },
 		 });

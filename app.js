@@ -106,11 +106,11 @@ var patients = require('./routes/patients');
 var settings = require('./routes/settings');
 var diseases = require('./routes/diseases');
 var rooms = require('./routes/rooms');
-var adduser = require('./routes/adduser');
-var manageroom = require('./routes/manageroom');
-var manage_disease = require('./routes/manage_disease');
-var registration = require('./routes/registration');
-var registered = require('./routes/registered');
+
+var RoomSection = require('./routes/RoomSection');
+var DoctorSection = require('./routes/DoctorSection');
+var PatientRegisterSection = require('./routes/PatientRegisterSection');
+var PatientRegisteredSection = require('./routes/PatientRegisteredSection');
 
 app.use('/', login);
 app.use('/', appRoute);
@@ -119,11 +119,11 @@ app.use('/', patients);
 app.use('/', settings);
 app.use('/', diseases);
 app.use('/', rooms);
-app.use('/', adduser);
-app.use('/', manageroom);
-app.use('/', manage_disease);
-app.use('/', registration);
-app.use('/', registered);
+
+app.use('/', RoomSection);
+app.use('/', DoctorSection);
+app.use('/', PatientRegisterSection);
+app.use('/', PatientRegisteredSection);
 
 var timestamp = new Date().getTime();
 

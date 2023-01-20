@@ -17,3 +17,4 @@ $(document).ready(function () {
           $("#show-diseases-form").append(form);
       });
 });
+

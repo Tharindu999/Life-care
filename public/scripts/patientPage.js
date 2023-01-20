@@ -81,9 +81,9 @@ $(document).ready(function() {
            $('#diagnosis').dataTable({
 		      data: diseasesScoresCheckboxes,
 		      columns:[{
-	              title: "Disease"
+	              title: "Doctor"
 	           },{
-	              title: "Score"
+	              title: "Ward"
 	           },{
 	              title: "Diagnosis"
 	           }],

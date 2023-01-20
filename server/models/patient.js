@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const _ = require('lodash');
-var {scoreOfDisease, Disease} = require('./diseases.js');
+var {scoreOfDisease, Disease} = require('./doctor.js');
 var rooms = require('./rooms.js');
 
 // User Schema

@@ -148,13 +148,13 @@ router.post('/app/addroom', (req, res) => {
 
         room.save().then((room) => {
             console.log('Room added');
-            res.status(200).redirect('/app/systemsettings');
+            res.status(200).redirect('/app');
         }).catch((err) => {
             console.log(err);
-            res.status(400).redirect('/app/systemsettings');
+            res.status(400).redirect('/app');
         });
     } else {
-        res.status(400).redirect('/app/systemsettings', {messages: req.flash('success_msg', 'Room added succesfully.') });
+        res.status(400).redirect('/app', {messages: req.flash('success_msg', 'Room added succesfully.') });
     }
 });
 
@@ -182,9 +182,9 @@ router.post('/app/deleterooms', (req, res) => {
                  console.log(err);
             });
         }
-        res.status(200).redirect('/app/systemsettings');
+        res.status(200).redirect('/app');
     } else {
-        res.status(400).redirect('/app/systemsettings');
+        res.status(400).redirect('/app');
     }
 });
 

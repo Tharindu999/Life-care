@@ -4,7 +4,7 @@ const express = require('express');
 const _ = require('lodash');
 const router = express.Router();
 
-var {scoreOfDisease, Disease} = require('./../server/models/diseases.js');
+var {scoreOfDisease, Disease} = require('./../server/models/doctor.js');
 var {Patient} = require('./../server/models/patient.js');
 var {rooms, Room} = require('./../server/models/rooms.js');
 var isValidDate = require('is-valid-date');
@@ -14,14 +14,14 @@ const {ObjectID} = require('mongodb');
 /*
     GET /app/addpatient -> go to addPatient page
 */
-router.get('/app/registration', (req, res) => {
-    res.render('registration', {pageTitle: "Patients registration"});
+router.get('/app/PatientRegisterSection', (req, res) => {
+    res.render('PatientRegisterSection', {pageTitle: ""});
 });
 
 /*
     POST /addPatient -> add new patient
 */
-router.post('/app/registration', (req, res) => {
+router.post('/app/PatientRegisterSection', (req, res) => {
     // receive the diseases from the form in the array PD, each element being a String with the disease name
     var PD = req.body.PD;
     var dateOfBirth = req.body.dateOfBirth;
@@ -40,7 +40,7 @@ router.post('/app/registration', (req, res) => {
         if (_.isEmpty(req.body.hospitalNumber)) req.flash('error_msg', 'Please enter the hospital number.');
         if (!isValidDate(dateOfBirth)) req.flash('error_msg', 'The date is not valid.');
 
-        res.status(400).redirect('/app/registration');
+        res.status(400).redirect('/app/PatientRegisterSection');
     } else {
         // set the sex of the new patient
         var sex = req.body.sex;
