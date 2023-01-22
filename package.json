@@ -4,8 +4,13 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+<<<<<<< HEAD
+
+        "test": "jest"
+=======
        "test": "jest"
        
+>>>>>>> 64e43db0912cb405e4b50a7493b1f3ab2ff38d3c
     },
     "engines": {
         "node": "6.9.1"
