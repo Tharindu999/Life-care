@@ -3,10 +3,10 @@
 const express = require('express');
 const router = express.Router();
 
-var {scoreOfDisease, Disease} = require('./../server/models/doctor.js');
+var { scoreOfDisease, Disease } = require('./../server/models/doctor.js');
 
-router.get('/app/systemsettings', (req, res) => {
-    res.status(200).render('systemsettings', {pageTitle: "System settings"});
+router.get('/app', (req, res) => {
+    res.status(200).render('systemsettings', { pageTitle: "System settings" });
 });
 
 module.exports = router;
