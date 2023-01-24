@@ -4,9 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-
-        "test": "jest"
-
+        "start": "node app.js"
     },
     "engines": {
         "node": "6.9.1"
