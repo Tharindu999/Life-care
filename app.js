@@ -104,7 +104,7 @@ var users = require('./routes/users');
 var appRoute = require('./routes/app');
 var patients = require('./routes/patients');
 var settings = require('./routes/settings');
-
+var diseases = require('./routes/diseases');
 var rooms = require('./routes/rooms');
 
 var RoomSection = require('./routes/RoomSection');
@@ -117,7 +117,7 @@ app.use('/', appRoute);
 app.use('/', users);
 app.use('/', patients);
 app.use('/', settings);
-
+app.use('/', diseases);
 app.use('/', rooms);
 
 app.use('/', RoomSection);
